@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="white" height="100" hide-on-scroll>
+  <v-app-bar app color="white" height="100" hide-on-scroll class="headstyles">
     <v-avatar class="mr-3" color="grey lighten-5" size="70">
       <v-img
         contain
@@ -18,4 +18,8 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.headstyles {
+  background-image: linear-gradient(to right, white , #3c92bd);
+}
+</style>

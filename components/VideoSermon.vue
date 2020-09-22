@@ -11,7 +11,7 @@
               <h2 class="display-1 font-weight-bold mb-3">
                 WE WOULD LOVE FOR YOU TO LEARN MORE ABOUT WHO WE ARE
               </h2>
-              <v-btn rounded outlined>Click Here!</v-btn>
+              <v-btn rounded outlined color="#3c92bd">Click Here!</v-btn>
             </v-col>
           </v-row>
         </v-container>
