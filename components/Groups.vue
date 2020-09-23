@@ -1,8 +1,8 @@
 <template>
-  <section id="aboutus">
+  <section id="stats">
     <v-parallax
       :height="$vuetify.breakpoint.smAndDown ? 700 : 800"
-      src="/par4.jpg"
+      src="/par2.jpg"
     >
       <v-container fill-height>
         <v-row class="mx-auto">

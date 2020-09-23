@@ -19,7 +19,4 @@ export default {}
 </script>
 
 <style scoped>
-.headstyles {
-  background-image: linear-gradient(to right, white , #3c92bd);
-}
 </style>

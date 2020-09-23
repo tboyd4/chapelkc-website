@@ -2,22 +2,22 @@
   <div>
     <nav-bar></nav-bar>
     <catcher></catcher>
-    <video-sermon></video-sermon>
     <connection-box></connection-box>
+    <groups></groups>
   </div>
 </template>
 
 <script>
 import NavBar from '../components/NavBar.vue'
 import Catcher from '../components/Catcher.vue'
-import VideoSermon from '../components/VideoSermon.vue'
 import ConnectionBox from '../components/ConnectionBox.vue'
+import Groups from '../components/Groups.vue'
 export default {
   components: {
     Catcher,
-    VideoSermon,
     NavBar,
-    ConnectionBox
+    ConnectionBox,
+    Groups
   }
 }
 </script>
