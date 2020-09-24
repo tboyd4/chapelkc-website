@@ -33,18 +33,22 @@
     <div class="py-4"></div>
 
     <v-container class="text-center">
-      <h2 class="display-2 font-weight-bold mb-3">VUETIFY FEATURES</h2>
+      <h2 class="display-2 font-weight-bold mb-3">WHO WE ARE</h2>
 
-      <v-responsive class="mx-auto mb-12" width="56">
-        <v-divider class="mb-1"></v-divider>
-
-        <v-divider></v-divider>
-      </v-responsive>
+      <v-responsive class="mx-auto mb-12" width="56"> </v-responsive>
 
       <v-row>
-        <v-col cols="12" md="4">
-          <v-card class="py-12 px-4" color="grey lighten-5" flat>
-            <h1>Hello</h1>
+        <v-col v-for="(card, index) in cardinfo" :key="index" cols="12" md="4">
+          <v-card outlined>
+            <v-list-item three-line>
+              <v-list-item-content>
+                <div class="overline mb-4">{{ card.over }}</div>
+                <v-list-item-title class="headline mb-1"
+                  >{{ card.text }}</v-list-item-title
+                >
+              </v-list-item-content>
+            </v-list-item>
+
           </v-card>
         </v-col>
       </v-row>
@@ -55,7 +59,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      cardinfo: [
+        { text: 'Something about our church.', over: 'US' },
+        { text: 'Something about our mission.', over: 'MISSION' },
+        { text: 'Something about our God', over: 'HIM' },
+      ],
+    }
+  },
+}
 </script>
 
 <style scoped></style>
