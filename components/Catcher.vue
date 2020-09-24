@@ -43,7 +43,7 @@
             <v-list-item three-line>
               <v-list-item-content>
                 <div class="overline mb-4">{{ card.over }}</div>
-                <v-list-item-title class="headline mb-1"
+                <v-list-item-title class="headline py-4"
                   >{{ card.text }}</v-list-item-title
                 >
               </v-list-item-content>
