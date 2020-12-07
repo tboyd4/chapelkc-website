@@ -6,7 +6,7 @@
       </v-main>
     </v-app>
 
-    <v-footer class="justify-center" color="white" height="100">
+    <v-footer class="justify-center" color="white">
       <div
         class="font-weight-light white--text text--white text-center mx-auto"
       >
