@@ -3,18 +3,40 @@
     <v-app-bar app flat color="#FFFFFF">
       <v-img max-height="48px" max-width="48px" src="/TCKCLogo1.png" />
       <v-spacer></v-spacer>
-      <div>
-        <v-btn text color="primary" class="ma-6 px-1 py-1" to="/">Home</v-btn>
-        <v-btn text color="primary" class="ma-6 px-1 py-1" to="/about-us"
+      <div :v-if="!isMobileScreen">
+        <v-btn
+          text
+          color="primary"
+          class="d-none d-md-inline ma-6 px-1 py-1"
+          to="/"
+          >Home</v-btn
+        >
+        <v-btn
+          text
+          color="primary"
+          class="d-none d-md-inline ma-6 px-1 py-1"
+          to="/about-us"
           >About Us</v-btn
         >
-        <v-btn text color="primary" class="ma-6 px-1 py-1" to="/next-steps"
+        <v-btn
+          text
+          color="primary"
+          class="d-none d-md-inline ma-6 px-1 py-1"
+          to="/next-steps"
           >Next Steps</v-btn
         >
-        <v-btn text color="primary" class="ma-6 px-1 py-1" to="/give"
+        <v-btn
+          text
+          color="primary"
+          class="d-none d-md-inline ma-6 px-1 py-1"
+          to="/give"
           >Give</v-btn
         >
-        <v-btn text color="primary" class="ma-6 px-1 py-1" to="/messages"
+        <v-btn
+          text
+          color="primary"
+          class="d-none d-md-inline ma-6 px-1 py-1"
+          to="/messages"
           >Messages</v-btn
         >
       </div>
@@ -70,8 +92,17 @@
 
 <script>
 export default {
+  mounted() {
+    if (
+      this.$vuetify.breakpoint === 'xs' ||
+      this.$vuetify.breakpoint === 'sm'
+    ) {
+      this.isMobileScreen = true
+    }
+  },
   data: () => {
     return {
+      isMobileScreen: false,
       drawer: false,
       group: null,
     }
