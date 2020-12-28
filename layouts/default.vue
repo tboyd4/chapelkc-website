@@ -1,18 +1,15 @@
 <template>
   <div>
+    <!-- Put Header Component Here -->
+
+    <!-- Body of App Goes Here. This shouldn't change -->
     <v-app>
       <v-main>
         <nuxt />
       </v-main>
     </v-app>
 
-    <v-footer class="justify-center" color="white">
-      <div
-        class="font-weight-light white--text text--white text-center mx-auto"
-      >
-        &copy; {{ new Date().getFullYear() }} — The Chapel KC
-      </div>
-    </v-footer>
+    <!-- Put Footer Component Here -->
   </div>
 </template>
 
