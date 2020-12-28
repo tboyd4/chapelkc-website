@@ -1,6 +1,7 @@
 <template>
   <div>
     <!-- Put Header Component Here -->
+    <head-nav></head-nav>
 
     <!-- Body of App Goes Here. This shouldn't change -->
     <v-app>
@@ -14,5 +15,10 @@
 </template>
 
 <script>
-export default {}
+import HeadNav from '../components/LayoutComponents/HeadNav.vue'
+export default {
+  components: {
+    HeadNav,
+  },
+}
 </script>
