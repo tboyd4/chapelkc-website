@@ -32,11 +32,17 @@
           </i></div>
       </div>
     </div>
+  <ConnectComponent/>
   </div>
 </template>
 
 <script>
-export default {}
+import ConnectComponent from '../components/LayoutComponents/ConnectComponent.vue'
+export default {
+  components:{
+    ConnectComponent
+  }
+}
 </script>
 
 <style lang="scss" scoped>
