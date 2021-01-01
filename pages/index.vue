@@ -18,7 +18,7 @@
     <div>
       <div class="mission-wrapper">
         <v-img class="mission-image" max-height="1100px" max-width="600px" src="/shape-11.png" />
-        <div class="mission-title">OUR MISSION IS TO CONNECT, GROW, AND SERVE</div>
+        <div class="mission-title"><i>OUR MISSION </i> IS TO CONNECT, GROW, AND SERVE</div>
       </div>
       <div class="mission-text">
         <div><i>
