@@ -3,22 +3,25 @@
     <!-- Put Header Component Here -->
     <head-nav></head-nav>
 
-    <!-- Body of App Goes Here. This shouldn't change -->
     <v-app>
+      <!-- Body of App Goes Here. This shouldn't change -->
       <v-main>
         <nuxt />
       </v-main>
-    </v-app>
 
-    <!-- Put Footer Component Here -->
+      <!-- Put Footer Component Here -->
+      <foot-bar></foot-bar>
+    </v-app>
   </div>
 </template>
 
 <script>
 import HeadNav from '../components/LayoutComponents/HeadNav.vue'
+import FootBar from '../components/LayoutComponents/FootBar.vue'
 export default {
   components: {
     HeadNav,
+    FootBar,
   },
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-auto overflow-hidden">
-    <v-app-bar app flat color="#FFFFFF">
+    <v-app-bar app hide-on-scroll flat color="#FFFFFF">
       <v-img max-height="48px" max-width="48px" src="/TCKCLogo1.png" />
       <v-spacer></v-spacer>
       <div :v-if="!isMobileScreen">
