@@ -1,9 +1,9 @@
 <template>
   <v-footer app absolute color="#ffffff">
-    <v-row justify="center" align="center" no-gutters>
+    <v-row class="footer-container" justify="center" align="center" no-gutters>
       <v-col class="text-center" cols="12" md="2">
         <v-row justify="center" align="center" no-gutters>
-          <v-col class="mb-10" cols="12">
+          <v-col class="mb-6" cols="12">
             <svg
               width="158"
               height="158"
@@ -33,12 +33,22 @@
           </v-col>
           <v-col cols="12">
             <v-row align="center" justify="center">
-              <v-col class="text-center">
-                <v-img src="/instagram.jpg" height="40px" width="40px"></v-img>
+              <v-col class="footer-media-container" cols="6">
+                <v-img
+                  class="footer-media-icon pr-0"
+                  src="/instagram.jpg"
+                  height="50px"
+                  width="50px"
+                ></v-img>
               </v-col>
-              <v-spacer></v-spacer>
-              <v-col class="text-center">
-                <v-img src="/facebook.jpg" height="40px" width="40px"></v-img>
+
+              <v-col class="footer-media-container" cols="6">
+                <v-img
+                  class="footer-media-icon pl-0"
+                  src="/facebook.jpg"
+                  height="50px"
+                  width="50px"
+                ></v-img>
               </v-col>
             </v-row>
           </v-col>
@@ -78,4 +88,15 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.footer-container {
+  height: 400px;
+}
+.footer-media-icon {
+  margin: auto;
+}
+.footer-media-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+</style>
