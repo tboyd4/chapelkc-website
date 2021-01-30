@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Put Header Component Here -->
-    <head-nav></head-nav>
+    <!-- <head-nav></head-nav> -->
 
     <v-app>
       <!-- Body of App Goes Here. This shouldn't change -->
@@ -10,7 +10,7 @@
       </v-main>
 
       <!-- Put Footer Component Here -->
-      <foot-bar></foot-bar>
+      <!-- <foot-bar></foot-bar> -->
     </v-app>
   </div>
 </template>
