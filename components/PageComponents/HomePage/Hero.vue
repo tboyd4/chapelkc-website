@@ -17,8 +17,20 @@
 </template>
 
 <script>
+import anime from 'animejs/lib/anime.es.js'
+
 export default {
-  methods: {},
+  mounted() {
+    anime
+      .timeline({
+        targets: '.Lander-text',
+        translateY: 300,
+        direction: 'reverse',
+        easing: 'linear',
+        duration: 1000,
+      })
+      .add({ targets: '.Lander-text', color: 'rgba(255,255,255, .2)' }, 0)
+  },
 }
 </script>
 
