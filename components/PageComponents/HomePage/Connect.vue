@@ -88,10 +88,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 36px;
-  line-height: 41.4px;
-
   padding-top: 8px;
   padding-right: 5px;
   cursor: pointer;
