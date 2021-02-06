@@ -23,6 +23,7 @@
 
 <script>
 export default {
+  name: 'SermonComponent',
   computed: {
     height() {
       switch (this.$vuetify.breakpoint.name) {
