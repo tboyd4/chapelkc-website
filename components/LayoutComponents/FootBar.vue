@@ -1,6 +1,6 @@
 <template>
   <v-footer app absolute color="#ffffff">
-    <v-row class="footer-container" justify="center" align="center" no-gutters>
+    <v-row class="footer-container" justify="center" align="top" no-gutters>
       <v-col class="text-center" cols="12" md="2">
         <v-row justify="center" align="center" no-gutters>
           <v-col class="mb-6" cols="12">
@@ -54,29 +54,34 @@
           </v-col>
         </v-row>
       </v-col>
+
       <v-col class="text-center" cols="12" md="2">
-        <h2>Sup</h2>
-        <p>Bro</p>
-        <p>Bro</p>
-        <p>Bro</p>
+        <h2>CONNECT</h2>
+        <p>Vist</p>
+        <p>Next Steps</p>
+        <p>Belief</p>
+        <p>Subscribe</p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
-        <h2>Sup</h2>
-        <p>Bro</p>
-        <p>Bro</p>
-        <p>Bro</p>
+        <h2>FAMILY</h2>
+        <p>En Fuego</p>
+        <p>Chapel Kids</p>
+        <p>Our Pastors</p>
+        <p>Chapel Groups</p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
-        <h2>Sup</h2>
-        <p>Bro</p>
-        <p>Bro</p>
-        <p>Bro</p>
+        <h2>RESOURCES</h2>
+        <p>App</p>
+        <p>Events</p>
+        <p>Give</p>
+        <p></p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
-        <h2>Sup</h2>
-        <p>Bro</p>
-        <p>Bro</p>
-        <p>Bro</p>
+        <h2>MEDIA</h2>
+        <p>Messages</p>
+        <p>Podcast</p>
+        <p></p>
+        <p></p>
       </v-col>
     </v-row>
   </v-footer>
@@ -89,8 +94,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 .footer-container {
   height: 400px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .footer-media-icon {
   margin: auto;

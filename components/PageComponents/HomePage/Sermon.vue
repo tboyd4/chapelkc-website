@@ -12,7 +12,7 @@
       <v-col cols="12">
         <div>
           <video class="SermonVideo-player" :height="height" controls>
-            <source src="introclip.mp4" type="video/mp4" />
+            <source src="sample.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -27,9 +27,9 @@ export default {
     height() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return 400
+          return 350
         case 'sm':
-          return 650
+          return 475
         case 'md':
           return 700
         case 'lg':

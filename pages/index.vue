@@ -2,8 +2,8 @@
   <div>
     <Hero />
     <Sermon />
-    <!-- <Mission />
-    <Connect /> -->
+    <Mission />
+    <Connect />
   </div>
 </template>
 
