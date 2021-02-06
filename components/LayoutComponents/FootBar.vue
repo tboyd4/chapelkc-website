@@ -57,31 +57,28 @@
 
       <v-col class="text-center" cols="12" md="2">
         <h2>CONNECT</h2>
-        <p>Vist</p>
-        <p>Next Steps</p>
-        <p>Belief</p>
-        <p>Subscribe</p>
+        <p><a href="/">Visit</a></p>
+        <p><a href="/">Next Steps</a></p>
+        <p><a href="/">Belief</a></p>
+        <p><a href="/">Subscribe</a></p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
         <h2>FAMILY</h2>
-        <p>En Fuego</p>
-        <p>Chapel Kids</p>
-        <p>Our Pastors</p>
-        <p>Chapel Groups</p>
+        <p><a href="/">En Fuego</a></p>
+        <p><a href="/">Chapel Kids</a></p>
+        <p><a href="/">Our Pastors</a></p>
+        <p><a href="/">Chapel Groups</a></p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
         <h2>RESOURCES</h2>
-        <p>App</p>
-        <p>Events</p>
-        <p>Give</p>
-        <p></p>
+        <p><a href="/">App</a></p>
+        <p><a href="/">Events</a></p>
+        <p><a href="/">Give</a></p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
         <h2>MEDIA</h2>
-        <p>Messages</p>
-        <p>Podcast</p>
-        <p></p>
-        <p></p>
+        <p><a href="/">Messages</a></p>
+        <p><a href="/">Podcast</a></p>
       </v-col>
     </v-row>
   </v-footer>
@@ -97,6 +94,10 @@ export default {
 h2 {
   margin-bottom: 30px;
   margin-top: 30px;
+}
+a {
+  color: black;
+  text-decoration: none;
 }
 .footer-container {
   height: 400px;
