@@ -33,6 +33,7 @@
 <script>
 import anime from 'animejs/lib/anime.es.js'
 export default {
+  name: 'MissionComponent',
   methods: {
     activateAnimationOne() {
       anime
