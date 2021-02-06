@@ -10,7 +10,13 @@
             src="/shape-11.png"
           />
 
-          <div class="Mission-title" v-on:click="activateAnimationOne">
+          <div
+            class="Mission-title"
+            v-observe-visibility="{
+              callback: activateAnimationOne,
+              once: true,
+            }"
+          >
             <i>OUR MISSION </i> IS TO CONNECT, GROW, AND SERVE
           </div>
         </div>
@@ -18,7 +24,13 @@
     </v-row>
     <v-row class="Mission-textContainer">
       <v-col>
-        <div class="Mission-text" v-on:click="activateAnimationTwo">
+        <div
+          class="Mission-text"
+          v-observe-visibility="{
+            callback: activateAnimationTwo,
+            once: true,
+          }"
+        >
           <div>
             <i> CONNECTING TO JESUS AND COMMUNITY, GROWING IN OUR FAITH AND </i>
           </div>
@@ -36,6 +48,8 @@ export default {
   name: 'MissionComponent',
   methods: {
     activateAnimationOne() {
+      console.log('Animation 1 Moving')
+
       anime
         .timeline({
           targets: '.Mission-title',
@@ -47,6 +61,7 @@ export default {
         .add({ targets: '.Mission-title', color: 'rgba(255,255,255, .1)' }, 0)
     },
     activateAnimationTwo() {
+      console.log('Animation 2 Moving')
       anime
         .timeline({
           targets: '.Mission-text',
