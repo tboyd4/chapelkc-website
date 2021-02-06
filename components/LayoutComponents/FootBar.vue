@@ -34,21 +34,28 @@
           <v-col cols="12">
             <v-row align="center" justify="center">
               <v-col class="footer-media-container" cols="6">
-                <v-img
-                  class="footer-media-icon pr-0"
-                  src="/instagram.jpg"
-                  height="50px"
-                  width="50px"
-                ></v-img>
+                <a
+                  href="https://www.instagram.com/thechapelkc/"
+                  target="_blank"
+                >
+                  <v-img
+                    class="footer-media-icon pr-0"
+                    src="/instagram.jpg"
+                    height="50px"
+                    width="50px"
+                  ></v-img>
+                </a>
               </v-col>
 
               <v-col class="footer-media-container" cols="6">
-                <v-img
-                  class="footer-media-icon pl-0"
-                  src="/facebook.jpg"
-                  height="50px"
-                  width="50px"
-                ></v-img>
+                <a href="https://www.facebook.com/thechapelkc" target="_blank">
+                  <v-img
+                    class="footer-media-icon pl-0"
+                    src="/facebook.jpg"
+                    height="50px"
+                    width="50px"
+                  ></v-img>
+                </a>
               </v-col>
             </v-row>
           </v-col>
@@ -57,28 +64,28 @@
 
       <v-col class="text-center" cols="12" md="2">
         <h2>CONNECT</h2>
-        <p><a href="/">Visit</a></p>
-        <p><a href="/">Next Steps</a></p>
-        <p><a href="/">Belief</a></p>
-        <p><a href="/">Subscribe</a></p>
+        <p><a href="http://www.google.com">Visit</a></p>
+        <p><a href="http://www.google.com">Next Steps</a></p>
+        <p><a href="http://www.google.com">Belief</a></p>
+        <p><a href="http://www.google.com">Subscribe</a></p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
         <h2>FAMILY</h2>
-        <p><a href="/">En Fuego</a></p>
-        <p><a href="/">Chapel Kids</a></p>
-        <p><a href="/">Our Pastors</a></p>
-        <p><a href="/">Chapel Groups</a></p>
+        <p><a href="http://www.google.com">En Fuego</a></p>
+        <p><a href="http://www.google.com">Chapel Kids</a></p>
+        <p><a href="http://www.google.com">Our Pastors</a></p>
+        <p><a href="http://www.google.com">Chapel Groups</a></p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
         <h2>RESOURCES</h2>
-        <p><a href="/">App</a></p>
-        <p><a href="/">Events</a></p>
-        <p><a href="/">Give</a></p>
+        <p><a href="http://www.google.com">App</a></p>
+        <p><a href="http://www.google.com">Events</a></p>
+        <p><a href="http://www.google.com">Give</a></p>
       </v-col>
       <v-col class="text-center" cols="12" md="2">
         <h2>MEDIA</h2>
-        <p><a href="/">Messages</a></p>
-        <p><a href="/">Podcast</a></p>
+        <p><a href="http://www.google.com">Messages</a></p>
+        <p><a href="http://www.google.com">Podcast</a></p>
       </v-col>
     </v-row>
   </v-footer>
@@ -97,7 +104,6 @@ h2 {
 }
 a {
   text-decoration: none;
-  font-family: Helvetica;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
