@@ -49,7 +49,6 @@ export default {
   methods: {
     activateAnimationOne() {
       console.log('Animation 1 Moving')
-
       anime
         .timeline({
           targets: '.Mission-title',
@@ -65,7 +64,7 @@ export default {
       anime
         .timeline({
           targets: '.Mission-text',
-          translateY: 300,
+          translateY: 200,
           direction: 'reverse',
           easing: 'linear',
           duration: 1000,
