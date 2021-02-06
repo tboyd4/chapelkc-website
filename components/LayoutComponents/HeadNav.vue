@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-auto overflow-hidden">
-    <v-app-bar app hide-on-scroll flat color="#FFFFFF">
+    <v-app-bar app absolute flat color="#FFFFFF">
       <v-img max-height="48px" max-width="48px" src="/TCKCLogo1.png" />
       <v-spacer></v-spacer>
       <div class="navigation-buttons">
@@ -105,6 +105,8 @@ export default {
 .nav-button {
   margin-left: 20px;
   margin-right: 20px;
+  font-weight: bold;
+  font-family: Helvetica, Helvetica, sans-serif;
 }
 .nav-icon {
   margin-right: 3px;
