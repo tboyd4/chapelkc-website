@@ -60,6 +60,7 @@ export default {}
   line-height: 28px;
   font-weight: normal;
   margin-left: 35px;
+  margin-right: 20px;
 }
 .Mission-textContainer {
   margin-top: 10px;
