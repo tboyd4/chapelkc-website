@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "gsap": "^3.6.0",
     "nuxt": "^2.14.12",
     "vue-scroll": "^2.1.13",

@@ -10,7 +10,7 @@
             src="/shape-11.png"
           />
 
-          <div class="Mission-title">
+          <div class="Mission-title" v-on:click="activateAnimationOne">
             <i>OUR MISSION </i> IS TO CONNECT, GROW, AND SERVE
           </div>
         </div>
@@ -18,7 +18,7 @@
     </v-row>
     <v-row class="Mission-textContainer">
       <v-col>
-        <div class="Mission-text">
+        <div class="Mission-text" v-on:click="activateAnimationTwo">
           <div>
             <i> CONNECTING TO JESUS AND COMMUNITY, GROWING IN OUR FAITH AND </i>
           </div>
@@ -31,7 +31,33 @@
 </template>
 
 <script>
-export default {}
+import anime from 'animejs/lib/anime.es.js'
+export default {
+  methods: {
+    activateAnimationOne() {
+      anime
+        .timeline({
+          targets: '.Mission-title',
+          translateX: 500,
+          direction: 'reverse',
+          easing: 'linear',
+          duration: 1000,
+        })
+        .add({ targets: '.Mission-title', color: 'rgba(255,255,255, .1)' }, 0)
+    },
+    activateAnimationTwo() {
+      anime
+        .timeline({
+          targets: '.Mission-text',
+          translateY: 300,
+          direction: 'reverse',
+          easing: 'linear',
+          duration: 1000,
+        })
+        .add({ targets: '.Mission-text', color: 'rgba(255,255,255, .1)' }, 0)
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
