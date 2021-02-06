@@ -96,8 +96,13 @@ h2 {
   margin-top: 30px;
 }
 a {
-  color: black;
   text-decoration: none;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  color: #a4a4a4;
 }
 .footer-container {
   height: 400px;
