@@ -9,14 +9,14 @@
             max-width="600px"
             src="/shape-11.png"
           />
+
           <div class="Mission-title">
             <i>OUR MISSION </i> IS TO CONNECT, GROW, AND SERVE
           </div>
         </div>
       </v-col>
     </v-row>
-
-    <v-row>
+    <v-row class="Mission-textContainer">
       <v-col>
         <div class="Mission-text">
           <div>
@@ -45,14 +45,23 @@ export default {}
   text-align: right;
   line-height: 95.09%;
   margin: 40px 40px 0 0;
+  @media only screen and (max-width: 600px) {
+    font-size: 40px;
+  }
 }
 .Mission-image {
   margin-top: 50px;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }
 .Mission-text {
   font-size: 24px;
   line-height: 28px;
   font-weight: normal;
   margin-left: 35px;
+}
+.Mission-textContainer {
+  margin-top: 10px;
 }
 </style>

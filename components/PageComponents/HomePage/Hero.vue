@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .Lander {
+  margin-top: 300px;
   .Lander-imageContainer {
     width: 100%;
   }
