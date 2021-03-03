@@ -110,6 +110,13 @@ a {
   line-height: 25px;
   color: #a4a4a4;
 }
+p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  color: #a4a4a4;
+}
 .footer-container {
   height: 400px;
   padding: 10px;

@@ -82,18 +82,16 @@ export default {
 }
 .c-button {
   background-color: white;
-  height: 37px;
-  width: 183px;
+  height: 40px;
+  width: 225px;
   border: 3px solid #000000;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   font-weight: 700;
   font-size: 36px;
-  padding-top: 8px;
-  padding-right: 5px;
+  padding: 25px;
   cursor: pointer;
 }
 </style>

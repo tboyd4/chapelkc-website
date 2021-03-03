@@ -88,6 +88,7 @@ export default {
   margin: 40px 40px 0 0;
   @media only screen and (max-width: 600px) {
     font-size: 40px;
+    display: none;
   }
 }
 .Mission-image {

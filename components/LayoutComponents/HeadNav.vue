@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto overflow-hidden">
+  <div>
     <v-app-bar app absolute flat color="#FFFFFF">
       <v-img max-height="48px" max-width="48px" src="/TCKCLogo1.png" />
       <v-spacer></v-spacer>
@@ -41,15 +41,12 @@
         >
       </div>
       <v-spacer></v-spacer>
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <!-- <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon> -->
     </v-app-bar>
 
-    <v-navigation-drawer app v-model="drawer" absolute right temporary>
+    <!-- <v-navigation-drawer app v-model="drawer" absolute right temporary>
       <v-list nav>
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
-        >
+        <v-list-item-group v-model="group">
           <v-list-item to="/">
             <v-list-item-icon class="nav-icon">
               <v-icon>mdi-home</v-icon>
@@ -86,8 +83,8 @@
           </v-list-item>
         </v-list-item-group>
       </v-list>
-    </v-navigation-drawer>
-  </v-card>
+    </v-navigation-drawer> -->
+  </div>
 </template>
 
 <script>
