@@ -40,6 +40,11 @@ export default {
   margin-top: 300px;
   .Lander-imageContainer {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (max-width: 600px) {
+      width: 90%;
+    }
   }
   .Lander-image {
     margin-left: auto;
