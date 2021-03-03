@@ -62,27 +62,27 @@
         </v-row>
       </v-col>
 
-      <v-col class="text-center" cols="12" md="2">
+      <v-col class="footer-columns" cols="12" md="2">
         <h2>CONNECT</h2>
         <p><a href="http://www.google.com">Visit</a></p>
         <p><a href="http://www.google.com">Next Steps</a></p>
         <p><a href="http://www.google.com">Belief</a></p>
         <p><a href="http://www.google.com">Subscribe</a></p>
       </v-col>
-      <v-col class="text-center" cols="12" md="2">
+      <v-col class="footer-columns" cols="12" md="2">
         <h2>FAMILY</h2>
         <p><a href="http://www.google.com">En Fuego</a></p>
         <p><a href="http://www.google.com">Chapel Kids</a></p>
         <p><a href="http://www.google.com">Our Pastors</a></p>
         <p><a href="http://www.google.com">Chapel Groups</a></p>
       </v-col>
-      <v-col class="text-center" cols="12" md="2">
+      <v-col class="footer-columns" cols="12" md="2">
         <h2>RESOURCES</h2>
         <p><a href="http://www.google.com">App</a></p>
         <p><a href="http://www.google.com">Events</a></p>
         <p><a href="http://www.google.com">Give</a></p>
       </v-col>
-      <v-col class="text-center" cols="12" md="2">
+      <v-col class="footer-columns" cols="12" md="2">
         <h2>MEDIA</h2>
         <p><a href="http://www.google.com">Messages</a></p>
         <p><a href="http://www.google.com">Podcast</a></p>
@@ -97,7 +97,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 h2 {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -108,14 +108,13 @@ a {
   font-weight: bold;
   font-size: 22px;
   line-height: 25px;
-  color: #a4a4a4;
+  color: #a4a4a4 !important;
 }
 p {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 25px;
-  color: #a4a4a4;
+  text-align: left;
+}
+.footer-columns {
+  text-align: center;
 }
 .footer-container {
   height: 400px;
