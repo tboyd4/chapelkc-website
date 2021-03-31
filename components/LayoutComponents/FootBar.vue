@@ -39,10 +39,10 @@
                   target="_blank"
                 >
                   <v-img
-                    class="footer-media-icon pr-0"
+                    class="footer-media-icon-insta pr-0"
                     src="/instagram.jpg"
-                    height="50px"
-                    width="50px"
+                    height="70px"
+                    width="70px"
                   ></v-img>
                 </a>
               </v-col>
@@ -50,10 +50,10 @@
               <v-col class="footer-media-container" cols="6">
                 <a href="https://www.facebook.com/thechapelkc" target="_blank">
                   <v-img
-                    class="footer-media-icon pl-0"
+                    class="footer-media-icon-fb pl-0"
                     src="/facebook.jpg"
-                    height="50px"
-                    width="50px"
+                    height="70px"
+                    width="70px"
                   ></v-img>
                 </a>
               </v-col>
@@ -64,28 +64,54 @@
 
       <v-col class="footer-columns" cols="12" md="2">
         <h2>CONNECT</h2>
-        <p><a href="http://www.google.com">Visit</a></p>
-        <p><a href="http://www.google.com">Next Steps</a></p>
-        <p><a href="http://www.google.com">Belief</a></p>
-        <p><a href="http://www.google.com">Subscribe</a></p>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Visit</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Next Steps</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Belief</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Subscribe</a></p>
+        </div>
       </v-col>
       <v-col class="footer-columns" cols="12" md="2">
         <h2>FAMILY</h2>
-        <p><a href="http://www.google.com">En Fuego</a></p>
-        <p><a href="http://www.google.com">Chapel Kids</a></p>
-        <p><a href="http://www.google.com">Our Pastors</a></p>
-        <p><a href="http://www.google.com">Chapel Groups</a></p>
+        <div class="link-container">
+          <p><a href="http://www.google.com">En Fuego</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Chapel Kids</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Our Pastors</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Chapel Groups</a></p>
+        </div>
       </v-col>
       <v-col class="footer-columns" cols="12" md="2">
         <h2>RESOURCES</h2>
-        <p><a href="http://www.google.com">App</a></p>
-        <p><a href="http://www.google.com">Events</a></p>
-        <p><a href="http://www.google.com">Give</a></p>
+        <div class="link-container">
+          <p><a href="http://www.google.com">App</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Events</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Give</a></p>
+        </div>
       </v-col>
       <v-col class="footer-columns" cols="12" md="2">
         <h2>MEDIA</h2>
-        <p><a href="http://www.google.com">Messages</a></p>
-        <p><a href="http://www.google.com">Podcast</a></p>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Messages</a></p>
+        </div>
+        <div class="link-container">
+          <p><a href="http://www.google.com">Podcast</a></p>
+        </div>
       </v-col>
     </v-row>
   </v-footer>
@@ -99,19 +125,25 @@ export default {
 
 <style lang="scss">
 h2 {
+  text-align: left;
   margin-bottom: 30px;
   margin-top: 30px;
+  margin-left: 90px;
 }
 a {
   text-decoration: none;
   font-style: normal;
   font-weight: bold;
+  text-align: left;
   font-size: 22px;
   line-height: 25px;
   color: #a4a4a4 !important;
 }
 p {
   text-align: left;
+}
+.link-container {
+  margin-left: 90px;
 }
 .footer-columns {
   text-align: center;
@@ -122,8 +154,11 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.footer-media-icon {
-  margin: auto;
+.footer-media-icon-fb {
+  margin: auto auto auto 10px;
+}
+.footer-media-icon-insta {
+  margin: auto 10px auto auto;
 }
 .footer-media-container {
   padding-left: 0px;
