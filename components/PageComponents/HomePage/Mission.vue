@@ -11,13 +11,15 @@
           />
 
           <div
-            class="Mission-title"
             v-observe-visibility="{
               callback: activateAnimationOne,
               once: true,
             }"
           >
-            <i>OUR MISSION </i> IS TO CONNECT, GROW, AND SERVE
+            <p class="line1 Mission-title">OUR MISSION IS</p>
+            <p class="line2 Mission-title">TO CONNECT,</p>
+            <p class="line3 Mission-title">GROW, AND</p>
+            <p class="line4 Mission-title">SERVE</p>
           </div>
         </div>
       </v-col>
@@ -49,15 +51,46 @@ export default {
   methods: {
     activateAnimationOne() {
       console.log('Animation 1 Moving')
+      // line 1 animation
       anime
         .timeline({
-          targets: '.Mission-title',
+          targets: '.line1',
           translateX: 500,
           direction: 'reverse',
           easing: 'linear',
           duration: 1000,
         })
-        .add({ targets: '.Mission-title', color: 'rgba(255,255,255, .1)' }, 0)
+        .add({ targets: '.line1', color: 'rgba(255,255,255, .1)' }, 0)
+      // line 2 animation
+      anime
+        .timeline({
+          targets: '.line2',
+          translateX: 500,
+          direction: 'reverse',
+          easing: 'linear',
+          duration: 1500,
+        })
+        .add({ targets: '.line2', color: 'rgba(255,255,255, .1)' }, 0)
+      // line 3 animation
+      anime
+        .timeline({
+          targets: '.line3',
+          translateX: 500,
+          direction: 'reverse',
+          easing: 'linear',
+          duration: 2000,
+        })
+        .add({ targets: '.line3', color: 'rgba(255,255,255, .1)' }, 0)
+      // line 4 animations
+      anime
+        .timeline({
+          targets: '.line4',
+          translateX: 500,
+          direction: 'reverse',
+          easing: 'linear',
+          duration: 2100,
+        })
+        .add({ targets: '.line4', color: 'rgba(255,255,255, .1)' }, 0)
     },
     activateAnimationTwo() {
       console.log('Animation 2 Moving')
