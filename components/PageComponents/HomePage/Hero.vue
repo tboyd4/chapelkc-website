@@ -2,7 +2,7 @@
   <div class="Lander">
     <v-row align="center" justify="center">
       <v-col cols="12">
-        <div class="Lander-imageContainer">
+        <div class="Lander-imageContainer" :style="{ opacity: opacity }">
           <v-img
             class="Lander-image"
             max-height="300px"
@@ -21,7 +21,14 @@ import anime from 'animejs/lib/anime.es.js'
 
 export default {
   name: 'HeroComponent',
+  data() {
+    return {
+      opacity: 1,
+      myScrollY: 0,
+    }
+  },
   mounted() {
+    window.addEventListener('scroll', this.handleScroll)
     anime
       .timeline({
         targets: '.Lander-text',
@@ -31,6 +38,29 @@ export default {
         duration: 1000,
       })
       .add({ targets: '.Lander-text', color: 'rgba(255,255,255, .2)' }, 0)
+  },
+  methods: {
+    handleScroll(event) {
+      let verticalScrollValue = event.path[1].scrollY
+
+      console.log('WINDOWS SCROLLY', verticalScrollValue)
+      console.log('TYLER SCROLL Y', this.myScrollY)
+
+      if (verticalScrollValue > 150 && verticalScrollValue > this.myScrollY) {
+        if (this.opacity > 0) {
+          this.opacity = this.opacity - 0.01
+        }
+      } else if (
+        verticalScrollValue < 600 &&
+        verticalScrollValue < this.myScrollY
+      ) {
+        if (this.opacity < 1) {
+          this.opacity = this.opacity + 0.01
+        }
+      }
+
+      this.myScrollY = verticalScrollValue
+    },
   },
 }
 </script>
