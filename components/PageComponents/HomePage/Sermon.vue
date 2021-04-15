@@ -11,7 +11,13 @@
     <v-row align="center" justify="center">
       <v-col cols="12">
         <div class="SermonVideo-playerContainer">
-          <video class="SermonVideo-player" :height="height" autoplay loop muted>
+          <video
+            class="SermonVideo-player"
+            :height="height"
+            autoplay
+            loop
+            muted
+          >
             <source src="sample.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -59,6 +65,7 @@ export default {
     margin-right: 50px;
     @media only screen and (max-width: 600px) {
       margin: 0px !important;
+      width: 90%;
     }
   }
   .SermonVideo-subTitle {
